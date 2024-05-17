@@ -1,0 +1,25 @@
+amount =5000 # Amount of Bank 
+pin = 7200     # Set the user pin
+user_pin = int(input("Enter the pin number:"))
+if user_pin == pin: # Condition to set the pin values
+    print("A/c no :1110703879 \n  Name : Kl Rahul") # Details to the owner of pin
+    print("1.Deposit")
+    print("2.Withdrawl")
+    print("Blanace")
+    choice = int(input("Enter your choice:")) # Conditions
+    
+    if choice == 1:
+        damount=int(input("Enater the deposit amount:"))
+        amount = amount + damount
+        print("your currently balance is :",amount)
+    elif choice==2:
+        wamount=int(input("Enter the withdrawl amount :"))
+        amount = amount - wamount
+        print("your currently balance is :",amount)
+    
+    elif choice == 3:
+         print("your currently balance is :",amount)
+    else:
+        print("Invalid input")
+else:
+    print("Invalid user pin")
